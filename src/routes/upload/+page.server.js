@@ -105,3 +105,4 @@ export const actions = {
       return fail(500, { message: 'Failed to process the PDF file' });
     }
   }
+};
