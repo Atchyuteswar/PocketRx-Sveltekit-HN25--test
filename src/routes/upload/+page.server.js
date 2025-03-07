@@ -2,6 +2,7 @@
 import { fail } from '@sveltejs/kit';
 import fs from 'fs';
 import path from 'path';
+import * as pdfjsLib from 'pdfjs-dist';
 import { PDFParser } from './pdfParser';
 import { prisma } from '$lib/server/prisma';
 
@@ -104,4 +105,3 @@ export const actions = {
       return fail(500, { message: 'Failed to process the PDF file' });
     }
   }
-};
